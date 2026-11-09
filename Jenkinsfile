@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh '''
                     for i in $(seq 1 15); do
-                        curl -sf http://localhost:8000 && exit 0
+                        curl -sf http://192.168.198.139:8000 && exit 0
                         sleep 2
                     done
                     echo "App did not respond"; exit 1
